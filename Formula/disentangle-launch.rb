@@ -5,21 +5,21 @@
 class DisentangleLaunch < Formula
   desc "Deployment orchestrator for the Disentangle Network"
   homepage "https://github.com/disentangle-network/launch"
-  version "0.5.0"
+  version "0.5.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/disentangle-network/launch/releases/download/v0.5.0/launch_0.5.0_darwin_amd64.tar.gz"
-      sha256 "8652c23d1779ec9adef77da64d8197b9567607ca4c3104b0a99dd7156973925b"
+      url "https://github.com/disentangle-network/launch/releases/download/v0.5.1/launch_0.5.1_darwin_amd64.tar.gz"
+      sha256 "1551c284608fca0776196b51643181fe2a7043471e3b94133335c1f529ae3b59"
 
       def install
         bin.install "launch-disentangle"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/disentangle-network/launch/releases/download/v0.5.0/launch_0.5.0_darwin_arm64.tar.gz"
-      sha256 "ddedf751cecbe07e65f8d53f06a77ba9de73449de93390875a075dd8f3f9819b"
+      url "https://github.com/disentangle-network/launch/releases/download/v0.5.1/launch_0.5.1_darwin_arm64.tar.gz"
+      sha256 "a3be000985c5bd05181e33ff84a6ece7e92f1bbf031663077d9c35e04d02ecd7"
 
       def install
         bin.install "launch-disentangle"
@@ -29,15 +29,15 @@ class DisentangleLaunch < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/disentangle-network/launch/releases/download/v0.5.0/launch_0.5.0_linux_amd64.tar.gz"
-      sha256 "a1f9253231a0e43081b523fb379baa36ab3463ee3ba194345e0244a3cd34cf8d"
+      url "https://github.com/disentangle-network/launch/releases/download/v0.5.1/launch_0.5.1_linux_amd64.tar.gz"
+      sha256 "455aca0d588ef77e5db79f407e5dcc061d0c3ffb0140343dba25fe2968676dae"
       def install
         bin.install "launch-disentangle"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/disentangle-network/launch/releases/download/v0.5.0/launch_0.5.0_linux_arm64.tar.gz"
-      sha256 "a98a56a65fdf8e2b96c3daca56bd26264b6bfabe7c7c0013e2a0ab90d9a53cad"
+      url "https://github.com/disentangle-network/launch/releases/download/v0.5.1/launch_0.5.1_linux_arm64.tar.gz"
+      sha256 "f2f146a58222c6e52cc0fde65f76773ef1fbfcc31630ed653b6acaf0968ef894"
       def install
         bin.install "launch-disentangle"
       end
